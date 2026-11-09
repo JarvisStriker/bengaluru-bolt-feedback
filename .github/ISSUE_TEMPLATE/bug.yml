@@ -1,0 +1,54 @@
+name: 🐞 Report a bug
+description: Something broke, looked wrong or didn't work in Bengaluru Bolt.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make Bengaluru Bolt better! Please don't include personal information — issues are public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+      placeholder: "When I ride the bus roof in Silk Board, the runner falls through…"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen again?
+      placeholder: "1. Pick Raju Anna  2. Start a run  3. …"
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - iPhone
+        - iPad
+        - Android phone
+        - Android tablet
+        - Windows computer
+        - Mac
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Safari
+        - Chrome
+        - Home-screen app (added to home screen)
+        - Firefox
+        - Edge
+        - Samsung Internet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording (optional)
+      description: Drag and drop an image or video here.

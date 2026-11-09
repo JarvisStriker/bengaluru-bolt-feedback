@@ -1,0 +1,26 @@
+name: 💡 Suggest an idea
+description: A new runner, neighbourhood, obstacle, power-up, music track or anything else.
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of idea?
+      options:
+        - New runner or chaser
+        - New neighbourhood
+        - New obstacle or power-up
+        - Music or voice lines
+        - Game feature
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Tell us about it — the more Bengaluru, the better.
+      placeholder: "A runner who's a filter-coffee delivery boy chased by the Darshini owner…"
+    validations:
+      required: true

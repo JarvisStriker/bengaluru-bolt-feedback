@@ -1,0 +1,28 @@
+name: 🗑️ Request data deletion
+description: Ask us to remove your leaderboard entry or cloud save.
+title: "[Data request] "
+labels: ["data-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Don't post your email address or anything private here — issues are public.**
+        Tell us your leaderboard name (as shown in Ranks) and what to remove. If you signed in with Google, we'll reply on this issue to confirm it's you before deleting your cloud save.
+  - type: input
+    id: name
+    attributes:
+      label: Leaderboard name
+      placeholder: "As shown in the Ranks screen"
+  - type: checkboxes
+    id: what
+    attributes:
+      label: What should we remove?
+      options:
+        - label: My leaderboard entry
+        - label: My cloud save (Google sign-in)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (optional)
